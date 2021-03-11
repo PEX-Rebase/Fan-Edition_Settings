@@ -20,12 +20,25 @@
 
    <PreferenceCategory
             android:title="@string/lockscreen_gestures">
-	    <com.android.settings.custom.preference.SystemSettingSwitchPreference
-	         android:key="double_tap_sleep_lockscreen"
-	         android:title="@string/double_tap_sleep_lockscreen_title"
-	         android:summary="@string/double_tap_sleep_lockscreen_summary"
-	         android:defaultValue="true" />
+    <!-- Double tap to sleep -->
+            <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_gesture"
+            android:title="@string/status_bar_double_tap_to_sleep_title"
+            android:summary="@string/status_bar_double_tap_to_sleep_summary"
+            android:defaultValue="true" />
 	    </PreferenceCategory>
+
+   <PreferenceCategory
+            android:title="@string/media">
+            <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="lockscreen_media_metadata"
+            android:title="@string/lockscreen_media_art_title"
+            android:defaultValue="false" />
+  
+            <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:key="lockscreen_visualizer"
+            android:title="@string/lockscreen_visualizer_title"
+            android:defaultValue="false" />
 
    <PreferenceCategory
             android:title="@string/misc">
@@ -43,13 +56,13 @@
 
 	    </PreferenceCategory>
 
-  <PreferenceCategory
-	  android:title="@string/lockscreen_security">
-	<com.android.settings.custom.preference.SystemSettingSwitchPreference
-	android:key="fp_unlock_keystore"
-        android:title="@string/fp_unlock_keystore_title"
-        android:summary="@string/fp_unlock_keystore_summary"
-	android:defaultValue="false" />
+   <PreferenceCategory
+            android:title="@string/lockscreen_security">
+            <com.android.settings.custom.preference.SystemSettingSwitchPreference
+	    android:key="fp_unlock_keystore"
+            android:title="@string/fp_unlock_keystore_title"
+            android:summary="@string/fp_unlock_keystore_summary"
+	    android:defaultValue="false" />
 
         <!-- FOD Customisations -->
         <Preference

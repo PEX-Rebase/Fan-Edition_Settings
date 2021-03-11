@@ -47,6 +47,7 @@
     <string name="volume">Volume Buttons</string>
     <string name="statusbar_clock">Clock Customisations</string>
     <string name="statusbar_battery">Battery Icon</string>
+    <string name="media">Lockscreen Media</string>
 
     <!-- VoLTE switch -->
     <string name="volte_switch_title">VoLTE icon</string>
@@ -83,9 +84,9 @@
     <string name="double_tap_to_sleep_title">Status bar double tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
 
-    <!-- Lockscreen double tap to sleep -->
-    <string name="double_tap_sleep_lockscreen_title">Lockscreen double tap to sleep</string>
-    <string name="double_tap_sleep_lockscreen_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Tap to sleep</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar or lockscreen to turn off the display</string>
 
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
@@ -110,6 +111,7 @@
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>
     <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
     <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    
     <!-- Fingerprint unlock -->
     <string name="fp_unlock_keystore_title">Force FP authentication</string>
     <string name="fp_unlock_keystore_summary">Unlock device with fingerprint after reboot or lockdown</string>
@@ -143,10 +145,9 @@
     <string name="fod_recog_animation_rog_pulsar">Pulsar</string>
     <string name="fod_recog_animation_rog_supernova">Supernova</string>
   
-    <!-- Global Actions -->
-    <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
-    <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader</string>
-    <string name="power_menu_advanced_category">Advanced</string>
+     <!-- Advanced restart options -->
+    <string name="advanced_reboot_title">Advanced restart</string>
+    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
 
     <!-- FOD icon picker -->
     <string name="fod_icon_picker_title">Fingerprint icon</string>
@@ -159,10 +160,6 @@
     <string name="fod_pressed_color_cyan">Cyan</string>
     <string name="fod_pressed_color_green">Green</string>
     <string name="fod_pressed_color_yellow">Yellow</string>
-
-    <!-- Lock screen cover art -->
-    <string name="lockscreen_media_art_title">Display media cover art</string>
-    <string name="lockscreen_media_art_summary">Show current playing media\'s album art on lockscreen</string>
 
     <!-- Notification count -->
     <string name="status_bar_notif_count_title">Show notification count</string>
@@ -264,5 +261,11 @@
     <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
     <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
     <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+
+     <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Display media cover art</string>
+
+     <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Display music visualizer</string>
 </resources>
 
