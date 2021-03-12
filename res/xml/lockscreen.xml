@@ -48,12 +48,6 @@
             android:summary="@string/lockscreen_battery_info_summary"
             android:defaultValue="true" />
 
-            <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="lockscreen_media_metadata"
-            android:title="@string/lockscreen_media_art_title"
-            android:summary="@string/lockscreen_media_art_summary"
-            android:defaultValue="true" />
-
 	    </PreferenceCategory>
 
    <PreferenceCategory
@@ -63,6 +57,7 @@
             android:title="@string/fp_unlock_keystore_title"
             android:summary="@string/fp_unlock_keystore_summary"
 	    android:defaultValue="false" />
+   </PreferenceCategory>
 
         <!-- FOD Customisations -->
         <Preference
