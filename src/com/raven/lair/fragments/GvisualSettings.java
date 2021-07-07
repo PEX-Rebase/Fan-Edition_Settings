@@ -142,7 +142,7 @@ public class GvisualSettings extends SettingsPreferenceFragment implements
         int position = -1;
         for (int i = 0; i < overlays.length; i++) {
             String overlay = overlays[i];
-            if (ThemeUtils.isThemeEnabled(overlay)) {
+            if (ThemesUtils.isThemeEnabled(overlay)) {
                 position = i;
             }
         }
@@ -153,7 +153,7 @@ public class GvisualSettings extends SettingsPreferenceFragment implements
         String overlayName = null;
         for (int i = 0; i < overlays.length; i++) {
             String overlay = overlays[i];
-            if (ThemeUtils.isThemeEnabled(overlay)) {
+            if (ThemesUtils.isThemeEnabled(overlay)) {
                 overlayName = overlay;
             }
         }
