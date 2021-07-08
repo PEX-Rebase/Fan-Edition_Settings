@@ -1,4 +1,6 @@
 /*
+ * Copyright (C) 2020 The Syberia Project
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -22,22 +24,24 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 
-import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class FodTweaks extends SettingsPreferenceFragment {
+public class FODIconPickerFragment extends SettingsPreferenceFragment {
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.fod_tweaks);
+        addPreferencesFromResource(R.xml.settings_fod_picker);
 
-        getActivity().getActionBar().setTitle(R.string.fod_title);
+        getActivity().getActionBar().setTitle(R.string.fod_icon_picker_title);
     }
+
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.CUSTOM_SETTINGS;
+        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
     }
 }
